@@ -33,10 +33,8 @@ public class ListenerImplementation extends BaseClass implements ITestListener{
 		try {
 			FileUtils.copyFile(src, dest);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		ITestListener.super.onTestFailure(result);
 	}
 
 	@Override
